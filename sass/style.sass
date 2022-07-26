@@ -1,0 +1,576 @@
+/*Colors*/
+$white: #FFFFFF
+$black: #000000
+$brand-red: #9E0000
+$red: #ED1C24
+$gold: #FFDD6D
+$orange: #EAB000
+$gold-light: #EFCFA6
+
+.white
+  color: $white !important
+.black
+  color: $black !important
+.brand-red
+  color: $brand-red !important
+
+/*Background*/
+.bg-basic
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+.bg-white
+  background-color: $white
+
+.bg-red
+  background-color: $red
+
+.bg-f5f5f5
+  background-color: #F5F5F5
+
+/*Button*/
+.btn-basic
+  padding: 8px 24px
+  cursor: pointer
+  margin-top: 32px
+  background-color: $red
+  color: $white
+  &:hover
+    color: $white
+    background-color: $brand-red
+
+.btn-white
+  border-radius: 100px
+  border: 1px solid $white
+  color: $white
+  &:hover
+    border: 1px solid $red
+    background-color: $red
+
+
+/*Position*/
+.flex-center
+  display: flex !important
+  justify-content: center !important
+  align-items: center !important
+
+/*Spacing*/
+.mt-24px
+  margin-top: 24px
+
+.mt-40px
+  margin-top: 40px
+
+.mt-56px
+  margin-top: 56px
+
+.mt-60px
+  margin-top: 60px
+
+.mt-80px
+  margin-top: 80px
+
+.mb-8px
+  margin-bottom: 8px
+
+.mb-16px
+  margin-bottom: 16px
+
+.mb-32px
+  margin-bottom: 32px
+
+.mb-40px
+  margin-bottom: 40px
+
+.mb-56px
+  margin-bottom: 56px
+
+.ml-16px
+  margin-left: 16px
+
+.ml-20px
+  margin-left: 20px
+
+.pl-8px
+  padding-left: 8px
+
+.pl-20px
+  padding-left: 20px  
+
+.pr-8px
+  padding-right: 8px
+
+.px-8px
+  padding-left: 8px
+  padding-right: 8px
+
+@media (max-width: 991.98px)
+  .mt-tb-0
+    margin-top: 0px
+
+  .mt-tb-16px
+    margin-top: 16px
+
+  .mb-tb-32px
+    margin-bottom: 32px
+
+  .mb-tb-16px
+    margin-bottom: 16px
+
+  .ml-tb-0
+    margin-left: 0px
+  
+  .pl-tb-15px
+    padding-left: 15px
+
+  .px-tb-15px
+    padding-left: 15px
+    padding-right: 15px
+
+@media (max-width: 767.98px)
+
+
+/*Image*/
+.object-fit-contain
+  object-fit: contain
+
+.object-fit-cover
+  object-fit: cover
+
+.object-position-top
+  object-position: top
+
+/*Border*/
+
+/*Font*/
+.text-start
+  text-align: left !important
+
+.fz-18px
+  font-size: 18px
+
+
+*
+  font-family: 'Roboto','Noto Sans TC', sans-serif
+
+//body
+  //padding-top: 120px
+
+//@media (max-width: 991.98px)
+  //body
+    //padding-top: 50px
+
+.container-1140
+  max-width: 1140px
+  padding-left: 15px
+  padding-right: 15px
+  margin-left: auto
+  margin-right: auto
+
+/*標題樣式*/
+.title-block
+  text-align: center
+  color: $red
+
+.title-text-chinese
+  font-size: 30px
+  font-weight: 500
+
+.title-text-english
+  font-size: 20px
+  font-weight: 400
+  margin-top: -8px
+  margin-bottom: -4px
+
+.title-hr
+  display: inline-block
+  width: 40px
+  max-width: 100%
+  height: 2px
+  background-color: $black
+  margin-top: -8px
+
+/*頁面BN*/
+.page-banner-big
+  height: 500px !important
+  display: flex
+  align-items: center
+
+.page-banner-title
+  color: $white
+  font-size: 52px
+  font-weight: 600
+  line-height: 1.1
+  text-shadow: 6px 6px 20px rgba(0,0,0,0.8)
+  width: 1140px
+
+.page-banner-sub-title
+  font-size: 24px
+
+@media (max-width: 767.99px)
+  .page-banner-big
+    height: 300px !important
+
+  .page-banner-title
+    font-size: 36px
+    width: 100%
+
+  .page-banner-sub-title
+    font-size: 18px
+
+/*卡片樣式*/
+.card-block
+  box-shadow: 6px 6px 20px rgba(0,0,0,0.16)
+  border-radius: 10px
+  height: 100%
+
+
+@media (max-width: 991.98px)
+
+@media (max-width: 767.99px)
+
+
+/*首頁*/
+.banner-pubilc
+  width: 100%
+  height: auto
+
+.index-about-us-img01
+  background-image: url(http://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_03168d7c-5885-4ffd-b467-c378eda4f32d.jpg)
+  background-position: 0 80%
+
+.index-about-us-img02
+  background-image: url(https://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_61eae6bc-e812-4106-b01e-06182e18039d.jpg)
+  background-position: 0 75%
+
+@media (max-width: 991.98px)
+  .index-about-us-img01,.index-about-us-img02
+    height: 300px !important
+
+.index-about-us-text-block
+  padding: 100px 120px
+
+@media (max-width: 1291.98px)
+  .index-about-us-text-block
+    padding: 72px 100px
+
+@media (max-width: 767.99px)
+  .index-about-us-text-block
+    padding: 36px 20px
+
+.content-text
+  line-height: 1.5
+  letter-spacing: 1px
+  font-weight: 300
+  font-size: 18px
+
+@media (max-width: 767.99px)
+  .content-text
+    font-size: 16px
+
+.index-video
+  width: 100% !important
+  height: 360px !important
+  margin-top: 40px
+  margin-bottom: 32px
+
+@media (max-width: 767.99px)
+  .index-video
+    margin-top: 16px
+    margin-bottom: 0
+
+/*關於我們*/
+.page-banner-about
+  background-image: url(https://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_f7cb28b9-9bdc-48c9-826c-084ac9699d94.jpg)
+  background-position: 0 85%
+
+.about-brief
+  background-color: #F5F5F5
+  position: relative
+  padding-top: 100px
+  padding-bottom: 100px
+  overflow: hidden
+
+@media (max-width: 767.99px)
+  .about-brief
+    padding-top: 48px
+    padding-bottom: 48px
+
+.bg-coffee-left-bottom
+  position: absolute
+  left: -2%
+  bottom: -15%
+  height: 300px !important
+  width: 300px !important
+  object-fit: object-fit-cover
+  transform: rotate(135deg)
+  filter: drop-shadow(6px 6px 20px rgba(0, 0, 0, 0.2))
+
+@media (max-width: 1499.99px)
+  .bg-coffee-left-bottom
+    left: -10%
+    bottom: -24%
+
+.about-brief-image
+  width: 100% !important
+  height: 200px !important
+  object-fit: cover
+  border-radius: 10px
+
+@media (max-width: 767.99px)
+  .about-brief-image
+    height: 160px !important
+
+.about-breif-text
+  margin-top: 8px
+  margin-bottom: 16px
+  text-align: center
+  font-size: 18px
+
+.page-banner-about-sub
+  background-image: url(https://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_f87de913-2239-4a81-9653-7cab2d13870f.png)
+  background-position: 0 68%
+
+.about-award
+  background-color: #F5F5F5
+  padding-top: 40px
+  padding-bottom: 100px
+
+.award-img
+  width: 100% !important
+  border-radius: 10px 10px 0 0
+
+@media (max-width: 767.99px)
+  .award-img
+    height: 300px !important
+    object-fit: cover
+
+.award-block
+  text-align: center
+  padding: 20px
+
+.award-form,.award-name
+  font-size: 20px
+  line-height: 1.3
+  font-family: "Noto Serif TC"
+  color: $red
+
+.award-name
+  color: $black
+  margin-top: 4px
+
+.about-timeline
+  background-color: $red
+  padding-top: 80px
+  padding-bottom: 80px
+
+@media (max-width: 767.99px)
+  .about-timeline
+    padding-top: 40px
+    padding-bottom: 40px
+
+.accordion-item 
+  border-bottom: 1px solid $white
+
+.accordion-button,.accordion-item
+  background-color: $red
+  color: $white
+
+.accordion-button
+  font-size: 24px
+  font-weight: 500
+
+.accordion-button:not(.collapsed)
+  background-color: $red
+  color: $white
+  box-shadow: inset 0 -1px 0 $white
+
+.accordion-button.collapsed::after
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+
+.accordion-button:not(.collapsed)::after
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+
+.accordion-body
+  font-size: 18px
+  li
+    padding-top: 4px
+    padding-bottom: 4px
+
+.about-international-block
+  padding-top: 80px
+  padding-bottom: 80px
+  img
+    width: 100%
+
+@media (max-width: 767.99px)
+  .about-international-block
+    padding-top: 40px
+    padding-bottom: 40px
+
+.international-title
+  font-size: 56px
+  font-weight: 600
+  color: $red
+
+.international-content
+  font-size: 20px
+
+@media (max-width: 767.99px)
+  .international-title
+    font-size: 40px
+
+  .international-content
+    font-size: 18px
+    line-height: 1.2
+
+/*經典之作*/
+.page-banner-classic
+  background-image: url(https://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_5eb4af80-4c77-4edd-b816-b958f3e0f158.jpg)
+
+.classic-products-content-section
+  display: flex
+  justify-self: flex-start
+  align-items: center
+
+.classic-products-english-block
+  display: flex
+  align-items: center
+  margin-bottom: 8px
+
+.classic-products-squard
+  background-color: $red
+  width: 24px
+  height: 12px
+  margin-right: 8px
+
+.classic-products-english-title
+  font-size: 20px
+  font-weight: 600
+  color: $red
+
+.classic-products-chinese-title
+  color: $red
+  font-size: 32px
+  font-weight: 500
+
+.classic-products-content
+  font-size: 18px
+  margin-top: 16px
+
+.classic-products-img
+  width: 100%
+  height: 420px
+  object-fit: cover
+
+@media (max-width: 767.99px)
+  .classic-products-img
+    height: 300px
+    margin-bottom: 16px
+
+/*王者國際*/
+.page-banner-international
+  background-image: url(https://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_b9f7bd8e-4149-4026-aa69-7dffe486b8b7.png)
+@media (max-width: 767.99px)
+  .page-banner-international
+    background-image: url(https://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_e2aa6249-e59a-4a41-803a-cd99fc702fdf.png)
+    .page-banner-title,.page-banner-sub-title
+      text-align: center
+
+.international-country
+  padding: 0
+  background-color: #FEF7EF
+
+.international-content-block
+  background-color: $red
+  padding: 60px
+  color: $white   
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+@media (max-width: 767.99px)
+  .international-content-block
+    height: 300px !important
+    padding: 36px
+
+.international-content-title
+  font-size: 28px
+  line-height: 1.4
+  font-weight: 500
+
+.international-content-text
+  font-size: 18px
+  font-weight: 300
+
+.international-country-image-block
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 1
+    width: 100% !important
+    height: 100% !important
+    background-color: rgba(#EFCFA6,0.2)
+
+.international-country-image
+  height: 320px !important
+  width: 100%  !important
+  object-fit: cover
+@media (max-width: 767.99px)
+  .international-country-image
+    height: 280px !important
+
+.international-country-section
+  display: flex
+  justify-content: space-between
+  align-items: end
+  padding: 36px 48px 48px
+  background-color: #FEF7EF
+@media (max-width: 767.99px)
+  .international-country-section
+    padding: 24px 36px 36px
+
+.international-country-block
+  display: flex
+  align-items: center
+
+.international-country-flag
+  width: 52px !important
+  height: 52px !important
+  border-radius: 100px
+  margin-right: 8px
+  object-fit: cover
+
+.international-country-name
+  font-size: 18px
+
+.international-country-text
+  color: $brand-red
+
+/*條款頁區塊*/
+.pages-banner
+  width: 100% !important
+  height: 200px !important
+
+.terms-title
+  font-size: 18px
+  font-weight: 500
+  margin-top: 32px
+  margin-bottom: 4px
+
+.terms-content,.page-content-text
+  font-weight: 300
+  line-height: 16*1.8px
+
+.page-content-text
+  text-align: center
+  width: 800px
+  max-width: 100%
+  margin: auto
+
+@media (max-width: 991.98px)
+  .pages-banner
+    height: 150px !important
