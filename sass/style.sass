@@ -13,6 +13,8 @@ $gold-light: #EFCFA6
   color: $black !important
 .brand-red
   color: $brand-red !important
+.red
+  color: $red !important
 
 /*Background*/
 .bg-basic
@@ -48,6 +50,20 @@ $gold-light: #EFCFA6
     border: 1px solid $red
     background-color: $red
 
+.btn-red
+  border: 1px solid $red
+  padding: 8px 24px
+  color: $red
+  &:hover
+    border: 1px solid $red
+    background-color: $red
+    color: $white
+
+.btn-text-white
+  text-decoration: none
+  color: $white
+  font-size: 18px
+
 
 /*Position*/
 .flex-center
@@ -56,6 +72,9 @@ $gold-light: #EFCFA6
   align-items: center !important
 
 /*Spacing*/
+.mt-16px
+  margin-top: 16px
+
 .mt-24px
   margin-top: 24px
 
@@ -124,6 +143,10 @@ $gold-light: #EFCFA6
   .pl-tb-15px
     padding-left: 15px
 
+  .px-tb-0
+    padding-left: 0px
+    padding-right: 0px
+
   .px-tb-15px
     padding-left: 15px
     padding-right: 15px
@@ -150,6 +173,9 @@ $gold-light: #EFCFA6
 .fz-18px
   font-size: 18px
 
+a
+  text-decoration: none !important
+
 
 *
   font-family: 'Roboto','Noto Sans TC', sans-serif
@@ -173,9 +199,17 @@ $gold-light: #EFCFA6
   text-align: center
   color: $red
 
+.title-icon
+  width: 44px !important
+  height: 44px !important
+  margin-bottom: 8px
+
+.title-content-block
+  padding: 0 20px
+
 .title-text-chinese
   font-size: 30px
-  font-weight: 500
+  font-weight: 400
 
 .title-text-english
   font-size: 20px
@@ -185,10 +219,10 @@ $gold-light: #EFCFA6
 
 .title-hr
   display: inline-block
-  width: 40px
+  width: 80px
   max-width: 100%
-  height: 2px
-  background-color: $black
+  height: 1.6px
+  background-color: $red
   margin-top: -8px
 
 /*頁面BN*/
@@ -236,28 +270,58 @@ $gold-light: #EFCFA6
   width: 100%
   height: auto
 
-.index-about-us-img01
-  background-image: url(http://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_03168d7c-5885-4ffd-b467-c378eda4f32d.jpg)
-  background-position: 0 80%
+.index-category-block
+  padding: 50px 36px
+  background-image: linear-gradient($red, $brand-red)
+  &:hover
+    border-radius: 10px
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.32)
+    .btn-text-white
+      text-decoration: underline
 
-.index-about-us-img02
-  background-image: url(https://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_61eae6bc-e812-4106-b01e-06182e18039d.jpg)
-  background-position: 0 75%
+.index-category-product
+  width: 50%
+  height: 200px
+  object-fit: contain
+
+.index-category-title,.index-category-sub-title
+  color: $white
+  line-height: 1.2
+
+.index-category-title
+  font-size: 30px
+
+.index-category-sub-title
+  font-size: 24px
 
 @media (max-width: 991.98px)
-  .index-about-us-img01,.index-about-us-img02
-    height: 300px !important
+  .index-category-block
+    padding: 24px 8px
+
+  .index-category-product
+    height: 140px
+
+  .index-category-title
+    font-size: 20px
+    text-align: center
+
+  .index-category-sub-title
+    font-size: 16px
+    text-align: center
+
+  .index-category-product
+    margin-top: 8px
+    width: 100%
+
+.index-about-section
+  height: 500px
+  display: flex
+  align-items: center
+  background-image: url(https://cdn.cybassets.com/s/files/21968/ckeditor/pictures/content_b2b3adab-93de-4343-b30d-cd5157cdf68c.jpg)
+  background-color: $black
 
 .index-about-us-text-block
-  padding: 100px 120px
-
-@media (max-width: 1291.98px)
-  .index-about-us-text-block
-    padding: 72px 100px
-
-@media (max-width: 767.99px)
-  .index-about-us-text-block
-    padding: 36px 20px
+  padding: 36px 48px
 
 .content-text
   line-height: 1.5
@@ -266,19 +330,35 @@ $gold-light: #EFCFA6
   font-size: 18px
 
 @media (max-width: 767.99px)
+  .index-about-section
+    height: 660px
+    background-size: 180%
+    background-position: 0 0 
+    align-items: end
+    padding-bottom: 16px
+
+    .title-text-chinese
+      font-size: 26px
+
+  .index-about-us-text-block
+    text-align: center
+    padding: 24px
+
   .content-text
-    font-size: 16px
+    font-size: 18px
 
 .index-video
-  width: 100% !important
-  height: 360px !important
-  margin-top: 40px
+  width: 800px !important
+  height: 400px !important
+  border: 1px solid $black 
+  padding: 12px
+  box-shadow: 6px 6px 20px rgba(0,0,0,0.16)
   margin-bottom: 32px
 
 @media (max-width: 767.99px)
   .index-video
-    margin-top: 16px
-    margin-bottom: 0
+    width: 100% !important
+    height: 320px !important
 
 /*關於我們*/
 .page-banner-about
