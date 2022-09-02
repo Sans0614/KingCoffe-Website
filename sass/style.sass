@@ -1,3 +1,182 @@
+/*系統內建*/
+
+/*修改導覽列固定上方*/
+
+#header
+  top: 0 !important
+  border-top: 16px solid #000
+
+@media (max-width: 767.99px)
+  #header
+    border-top: 8px solid #000
+
+/*修改導覽列Logo*/
+
+.computer_nav .logo img
+  height: 100px !important
+
+/*修改導覽列文字Hover顏色*/
+
+.qk-text--accent_hover:hover
+  color: #F4CB5B !important
+
+/*更改Footer文字顯示*/
+
+.sinlead-footer
+  display: none
+
+.qk-container.container.qk-fw--500
+  span:nth-last-child(3), a:nth-last-child(2)
+    display: none
+
+  .qk-text--link
+    color: #FFF !important
+
+/*更改Footer文字顏色*/
+
+/*更改聯絡我們表單按鈕*/
+
+.login_related button[type=submit]
+  background-color: #ED1C24 !important
+
+  &:hover
+    background-color: #9E0000 !important
+
+/*修改首頁部落格區塊*/
+/*電腦版部落格區塊選單隱藏*/
+
+#tab-blogs, #form-blogs
+  display: none
+
+/*手機版部落格區塊選單隱藏*/
+
+/*更改部落格文章卡片閱讀更多文字顏色*/
+
+.article_readmore .qk-text--text
+  color: #E1360C !important
+
+/*更改部落格文章卡片標題的高度*/
+
+.article-title a
+  height: 100%
+
+.article:hover
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.16)
+
+/*更改標題字被擋住*/
+
+.index_4_blogs .article-title a
+  height: auto !important
+
+/*首頁部落格只要顯示3篇*/
+ *#block_1653993461759 .article:last-child{
+ *  display: none;
+ *}
+
+/*我的帳號選單寬度*/
+
+#navigation
+  flex-shrink: 1
+
+@media (min-width: 991px)
+  /*更改部落格文章卡片間距*/
+
+  .article
+    padding: 0px 0px 24px
+
+  /*更改部落格文章卡片圖片圓角*/
+
+  .article-image a
+    border-radius: 0
+
+  /*更改部落格文章卡片左右間距*/
+
+  .caption
+    padding-left: 12px
+    padding-right: 12px
+
+  /*更改部落格文章卡片顯示數量*/
+
+  .index_4_blogs .tab-content > .active
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+
+  /*更改部落格文章卡片標題文字大小*/
+
+  .article-title .qk-fs--body
+    font-size: 18px !important
+
+  /*更改部落格文章背景顏色*/
+
+  #block_1653993461759
+    display: flex
+    justify-content: space-between
+
+  .index_4_blogs
+    .tab-pane
+      padding: 0 !important
+
+    .article
+      padding: 0 !important
+      width: 32.6%
+      border-radius: 10px
+
+    .article-image a
+      border-radius: 10px 10px 0 0 !important
+
+    .caption
+      padding-bottom: 12px
+
+  /*更改部落格區塊間距*/
+
+  [id="1653993461758"]
+    margin: 24px 0px 48px !important
+
+@media (max-width: 991px)
+  /*更改部落格文章卡片標題文字大小*/
+
+  .article-title .qk-fs--body
+    font-size: 16px !important
+
+  /*手機板導覽列全螢幕*/
+
+  .drawer--left.drawer-open .drawer-nav
+    width: 100vw
+
+  .qk-pos--rel.qk-pd--0
+    a, button
+      font-size: 16px
+
+/*更改首頁背景色*/
+
+.index
+  background-color: #FEF7EF
+
+  .product.product_tag
+    border: 1px solid #ddd
+
+/*更改首頁商品*/
+
+#_index_8_blocks .product_caption
+  padding: 0 12px 12px !important
+
+.index_8_blocks
+  .product_caption
+    padding: 0 12px 12px !important
+
+  .product_image a
+    border-radius: 0px !important
+
+@media (min-width: 991px)
+  .index .index_8_blocks .section-img
+    grid-column-gap: 0px !important
+    grid-row-gap: 0px !important
+
+/*更改任選活動折扣頁頁尾蓋到footer*/
+#nn_container
+  margin-bottom: 0px !important
+
+
+
 /*Colors*/
 $white: #FFFFFF
 $black: #000000
